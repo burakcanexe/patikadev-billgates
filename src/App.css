@@ -1,38 +1,99 @@
-.App {
+body{
+  background: #F0F2F7;
+}
+
+header{
+  padding: 2rem;
+  margin: 2rem 5rem;
+  text-align: center;
+  background-color: white;
+}
+
+header img{
+  width: 150px;
+  border-radius: 50%;
+}
+
+.money{
+  margin: 2rem 5rem;
+  display: flex;
+  transition: 300ms all;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2FCC73;
+  background: linear-gradient(#2FCC73,#1ABC9A);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+nav{
+  margin: 0 5rem;
+  background: white;
+  padding: 1.5rem;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Product List */
+
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 5rem;
+}
+
+.products .product{
+  background: white;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.products .product img{
+  width: 120px;
+  height: 110px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.products .product-name{
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.products .product-price{
+  color: #24C587;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
+
+.products .product-buy-sell{
+  display: grid;
+  grid-template-columns: 26% 26% 26%;
+  gap: 11%;
+}
+
+.products .product-buy-sell .sell{
+  border: 0;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.products .product-buy-sell .buy{
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(#2FCC73,#1ABC9A);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
